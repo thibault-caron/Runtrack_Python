@@ -78,7 +78,12 @@ def Job5():
 
 # Job 6
 def Job6():
-
+    #Demande à l'utilisateur de rentrer un nb
+    nombre = int(input("Veuillez entrer un nombre :"))
+    if nombre % 2 == 0:
+        print(f"Le nombre {nombre} est pair.")
+    else:
+        print(f"Le nombre {nombre} est impair.")  
 
     return
 
@@ -103,17 +108,4 @@ def Job8():
     return
 
 
-# Job 9
-def Job9():
-
-
-    return
-
-# Job 10
-def Job10():
-
-
-    return
-
-
-Job4()
+Job6()
