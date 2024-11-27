@@ -94,7 +94,7 @@ def Job7():
 
     i=1
 
-    while i <= len(string):
+    while i < len(string):
         print(string[:i])
         i+=2
 
@@ -103,9 +103,37 @@ def Job7():
 
 # Job 8
 def Job8():
+    #demander les longeurs à l'utilisateurs
+    a = float(input("Veuillez entrer la longeur a: "))
+    b = float(input("Veuillez entrer la longeur b: "))
+    c = float(input("Veuillez entrer la longeur c: ")) 
 
+    #verifier si les longueurs peuvent former des triangles
+    if a + b > c and a + c > b and b + c > a:
+
+        if ((a**2 + b**2 == c**2) or (a**2 + c**2 == b**2) or (b**2 + c**2 == a**2)) and  (a == b or a == b or b == c):
+            print("Ce triangle est rectangle et isoscèle.")
+
+        #verifier si le triangle est rectangle
+        elif (a**2 + b**2 == c**2) or (a**2 + c**2 == b**2) or (b**2 + c**2 == a**2):
+            print("Ce triangle est rectangle.")
+
+        #verifier si le triangle est equilateral
+        elif a == b == c:
+            print("Ce triangle est équilatéral.")
+
+        #verifier si le triangle est isocèle
+        elif a == b or a == b or b == c:
+            print("Ce triangle est isocèle.")
+
+    #si aucune des conditions pré ne marchent, il est quelconque.
+        else:
+            print("Ce triangle est quelconque")  
+
+    else:
+        print("Les longueurs saisies ne formeront pas un triangle.") 
 
     return
 
 
-Job6()
+Job8()
