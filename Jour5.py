@@ -44,11 +44,13 @@ def Job4():
 def Job5():
     # Initialisation liste
     L = [5, 9, 8, 15, 38]
+    print(f"la liste: {L}")
     print(f"La deuxième valeur de la liste est : {L[1]}")
 
 
     #   fonction qui remplace L[3] par la somme des cases voisines
     def replace_sum(L):
+        print("On effectue l'opération L[3] = L[2] + L[4]...")
         L[3] = L[2] + L[4]
         print(f"Liste après modification: {L}")
 
@@ -58,11 +60,24 @@ def Job5():
     return replace_sum(L)
 
 
-# Job 6
+# Job 6 - échange les valeurs de la première et de la dernière case d’une liste quelconque non vide.
 def Job6():
+    def change_place(L):
+        if len(L) > 0:
+            #inversion 1er et derniere position    
+            L[0], L[-1] = L[-1], L[0]
+        return L
 
+    #Cree une liste de cinq entiers
+    L = [1, 2, 3, 4, 5]
+    print(f"La liste dans l'ordre est : {L}") 
 
-    return
+    #appel de la fonction
+    L = change_place(L)
+
+    resultat = print("Liste après échange :", L ) 
+
+    return resultat
 
 
 # Job 7
@@ -122,4 +137,4 @@ def Job15():
 
     return
 
-Job5()
+Job6()
