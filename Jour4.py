@@ -36,19 +36,48 @@ def Job3():
 
 # Job 4
 def Job4():
+    def GetHello():
+        print("Hello la Plateforme")
 
-
-    return
+    return GetHello()
 
 
 # Job 5
 def Job5():
+    # Demande des valeurs à l'utilisateur
+    num1 = int(input("Entrez la valeur 1: "))
+    operator = input("Entrez l'opérateur (+, -, *, /, %): ")
+    num2 = int(input("Entrez la valeur 2 : "))
 
+    # Fonction calcule
+    def calcule(num1, operator, num2):
+        if operator == "+":
+            return num1 + num2
+        elif operator == "-":
+            return num1 - num2
+        elif operator == "*":
+            return num1 * num2
+        elif operator == "/":
+            if num2 != 0:
+                return num1 / num2
+            else:
+                return "Erreur: division par zéro"
+        elif operator == "%":
+            if num2 != 0:
+                return num1 % num2
+            else:
+                return "Erreur: division par zéro"
+        else:
+            return "Opérateur invalide"
+
+    # Appel de la fonction avec les arguments fournis
+    resultat = calcule(num1, operator, num2)
+    print("Résultat = ", resultat)
 
     return
 
 
-# Job 6 - fonction nombre positif ou negatif
+# Job 6 - fonction verifie si nombre positif ou negatif
 def Job6():
     # Entrez un nombre
     nombre = int(input("Entrez un nombre: "))
@@ -61,9 +90,6 @@ def Job6():
             print("Ce nombre est négatif.") 
         else: 
             print("Ce nombre est nul.")    
-
-    # Appel de la fonction avec le nombre saisi
-    # verif_nombre(nombre)
 
     return verif_nombre(nombre)
 
@@ -110,4 +136,4 @@ def Job10():
 
     return
 
-Job2()
+Job5()
