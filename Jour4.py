@@ -74,7 +74,7 @@ def Job5():
     resultat = calcule(num1, operator, num2)
     print("Résultat = ", resultat)
 
-    return
+    return resultat
 
 
 # Job 6 - fonction verifie si nombre positif ou negatif
@@ -119,9 +119,27 @@ def Job7():
 
 # Job 8
 def Job8():
+    # Demande à l'utilisateur d'entrer les valeurs
+    saison = input("Entrez une saison: 'été' ou 'hiver': ")
+    type_aliment = input("Entrez 'fruits' ou 'légumes': ")
 
+    # Définition de la fonction
+    def aliments(type_aliment, saison):
+        if (type_aliment == "fruits" or type_aliment == "f") and (saison == "hiver" or saison == "h"):
+            print("orange, mandarine, kiwi")
+        elif (type_aliment == "fruits" or type_aliment == "f") and (saison == "été" or saison == "e"):
+            print("Poire, fraise, cassis")
+        elif (type_aliment == "légumes" or type_aliment == "l") and (saison == "hiver" or saison == "h"):
+            print("carotte, topinambour, endive")
+        elif (type_aliment == "légumes" or type_aliment == "l") and (saison == "été" or saison == "e"):
+            print("artichaut, aubergine, navet")  
+        else:
+            print("Données introuvables.")   
 
-    return
+    # Appel de la fonction en passant les paramètres saisis par l'utilisateur
+    # aliments(type_aliment, saison)
+
+    return aliments(type_aliment, saison)
 
 
 # Job 9
@@ -136,4 +154,11 @@ def Job10():
 
     return
 
-Job5()
+
+# Job 11
+def Job11():
+
+
+    return
+
+Job8()
