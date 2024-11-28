@@ -22,9 +22,12 @@ def Job2():
 
 # Job 3
 def Job3():
+    def ajout_fruits():
+        fruits = ["pomme", "cerise", "orange"]
+        fruits.append("melon")
+        print(fruits)
 
-
-    return
+    return ajout_fruits() 
 
 
 # Job 4
@@ -105,4 +108,4 @@ def Job15():
 
     return
 
-Job2()
+Job3()
