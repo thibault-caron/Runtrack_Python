@@ -42,9 +42,20 @@ def Job4():
 
 # Job 5
 def Job5():
+    # Initialisation liste
+    L = [5, 9, 8, 15, 38]
+    print(f"La deuxième valeur de la liste est : {L[1]}")
 
 
-    return
+    #   fonction qui remplace L[3] par la somme des cases voisines
+    def replace_sum(L):
+        L[3] = L[2] + L[4]
+        print(f"Liste après modification: {L}")
+
+    #afficher la dernière valeur du tableau
+    print(f"Dernière valeur du tableau : {L[-1]}")
+
+    return replace_sum(L)
 
 
 # Job 6
@@ -111,4 +122,4 @@ def Job15():
 
     return
 
-Job4()
+Job5()
