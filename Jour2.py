@@ -101,16 +101,45 @@ def Job8():
     return
 
 
-# Job 9
+# Job 9 - Afficher les nombres pairs et impairs de 1 à 30
 def Job9():
 
+    print("Nombres pairs: ")
+    for i in range (1, 31):
+        if i % 2 == 0:
+            print(f"{i} est pair.")
+    print()
+
+    print("Nombres impairs: ")
+    for i in range (1, 31):
+        if i % 2 != 0:
+            print(f"{i} est impair.")
 
     return
 
-# Job 10
-def Job10():
 
+# Job 9b -  listes nombres pairs & impairs sous forme de tableaux
+def Job9b():
+
+    pairs = []
+    impairs = []
+    #remplir listes nbrs pairs et impairs
+    for i in range(1, 31):
+        if i % 2 == 0:
+            pairs.append(i)
+        else:
+            impairs.append(i)
+
+    # afficher nbrs pairs
+    print("Nombres pairs :") 
+    for j in pairs:
+        print(f"{j} est pair.")
+
+    # affichier nbrs impairs
+    print("Nombres impairs :")    
+    for nombre in impairs:
+        print(f"{j} est impair.")  
 
     return
 
-Job5()
+Job9b()

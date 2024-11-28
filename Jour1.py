@@ -124,7 +124,6 @@ def Job10():
 
 def Job_plus():
 
-    # Chaine qui détermine si e est présent
     chaine = input("Entrez une chaine de caractère: ")
 
     #vérifier si le e est présent
