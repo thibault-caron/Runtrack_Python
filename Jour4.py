@@ -1,19 +1,35 @@
-# Job 1
+# Job 1 - Fonction qui affiche 'Hello World'
 def Job1():
+    # La fonction
+    def My_Print_Hello():
+        print("Hello World")
 
+    #Appel de la fonction
+    My_Print_Hello()
 
     return
 
 # Job 2
 def Job2():
+    def My_Print_name(name):
+        print(name)
 
+
+    My_Print_name("Thibault")
+    My_Print_name("Vanessa")
+    My_Print_name("Florence")
     
-    return
+    return 
 
 
 # Job 3
 def Job3():
+    def Add(a, b):
+        print(a + b)
 
+    Add(10, 5)
+    Add(2, 4)
+    Add(7, 3)   
 
     return
 
@@ -94,4 +110,4 @@ def Job10():
 
     return
 
-Job7()
+Job2()
