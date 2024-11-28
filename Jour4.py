@@ -195,10 +195,17 @@ def Job10():
     return parity(nombre)
 
 
-# Job 11
+# Job 11 - transforme un entier en une chaine qui présente l'heure correspondante
 def Job11():
+    def time_to_text(minutes):
+        heures = minutes // 60
+        minutes_reste = minutes % 60
+        print(f"{heures} heures et {minutes_reste} minutes")
 
 
-    return
+    # Faire entrer à l'utilisateur un nombre entier de minutes
+    minutes = int(input("Entrez un nombre de minutes: "))
+    
+    return time_to_text(minutes)
 
-Job10()
+Job11()
