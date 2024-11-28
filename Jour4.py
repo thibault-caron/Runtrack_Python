@@ -208,4 +208,19 @@ def Job11():
     
     return time_to_text(minutes)
 
-Job11()
+# Job_plus - fonction qui inverse une string
+
+def Job_plus():
+    #reverse une string
+    def reverse_chaine(chaine):
+        chaine = input("Entrez une suite de charactères: ")
+        return chaine [::-1]
+
+    #appel de la fonction
+    resultat = print(reverse_chaine("test"))
+    # print(resultat)
+
+    return resultat
+
+
+Job_plus()
