@@ -10,11 +10,14 @@ def Job1():
 
     return print(resultat)
 
-# Job 2
+# Job 2 - afficher 2ème élément d'une liste
 def Job2():
 
+    def get_fruit():
+        fruits = ["pomme", "cerise", "orange"]
+        return print(f"Le deuxième fruit est: {fruits[1]}")
     
-    return
+    return get_fruit() # print(f"Affichez le deuxième fruit est: {fruits[1]}")
 
 
 # Job 3
@@ -102,4 +105,4 @@ def Job15():
 
     return
 
-Job1()
+Job2()
