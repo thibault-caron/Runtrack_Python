@@ -142,9 +142,32 @@ def Job8():
     return aliments(type_aliment, saison)
 
 
-# Job 9
+# Job 9 - Moyenne de 3 notes
 def Job9():
 
+    def moyenne(note1, note2, note3):
+        return (note1 + note2 + note3) / 3
+
+    #demande à l'utilisateur de rentrer les notes
+    note1 = float(input("Entrez la première note: "))
+    note2 = float(input("Entrez la deuxième note: "))
+    note3 = float(input("Entrez la troisième note: "))
+
+    #Calculer la moyenne en appelant la fct
+    moyenne_etudiant = moyenne(note1, note2, note3)
+    moyenne_etudiant = float(format(moyenne_etudiant, '.2f'))
+
+    #Afficher message en fct de la moyenne
+    if 15 <= moyenne_etudiant <= 20:
+        print(moyenne_etudiant, " - Très bon élève.")
+    elif 11 <= moyenne_etudiant <=14:
+        print(moyenne_etudiant, " - Bon élève.")   
+    elif 8 <= moyenne_etudiant <= 10:
+        print(moyenne_etudiant, " - Elève moyen.")
+    elif 0 <= moyenne_etudiant <= 7:
+        print(moyenne_etudiant, " - Elève devant faire des efforts.")  
+    else:
+        print("Note invalide.")    
 
     return
 
@@ -161,4 +184,4 @@ def Job11():
 
     return
 
-Job8()
+Job9()
