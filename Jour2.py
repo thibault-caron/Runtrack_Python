@@ -66,23 +66,37 @@ def Job5b():
         return
 
 
-# Job 6
+# Job 6 - premiers résultats de la multiplications par N * 7
 def Job6():
 
+    N = int(input(f"Entrez un entier N supérieur à zéro :"))
+    i = 1
+
+    while i <= 10:
+        print(f"{N} X {i} X 7 = {N * i * 7}")
+        i += 1
 
     return
 
 
-# Job 7
+# Job 7 - Boucle de 12 tours (affiche {tour - 2})
 def Job7():
 
+    for tour in range(1, 13):
+        resultat = 3 * tour - 2
+        print(f"Tour {tour} : {resultat}")
 
     return
 
 
-# Job 8
+# Job 8 - Boucle de 12 tours avec numéro précédent +2
 def Job8():
 
+    resultat = 0
+
+    for tour in range(1, 13):
+        resultat += 2
+        print(f"Tour {tour} : {resultat}")
 
     return
 
