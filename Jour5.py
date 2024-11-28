@@ -20,7 +20,7 @@ def Job2():
     return get_fruit() # print(f"Affichez le deuxième fruit est: {fruits[1]}")
 
 
-# Job 3
+# Job 3 - ajout en fin de liste
 def Job3():
     def ajout_fruits():
         fruits = ["pomme", "cerise", "orange"]
@@ -30,11 +30,14 @@ def Job3():
     return ajout_fruits() 
 
 
-# Job 4
+# Job 4 - ajout en 2ème position
 def Job4():
+    def ajout_mangue():
+        fruits = ["pomme", "cerise", "orange", "melon"]
+        fruits.insert(2,"mangue")
+        print(fruits)
 
-
-    return
+    return ajout_mangue()
 
 
 # Job 5
@@ -108,4 +111,4 @@ def Job15():
 
     return
 
-Job3()
+Job4()
