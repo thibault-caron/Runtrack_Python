@@ -171,11 +171,28 @@ def Job9():
 
     return
 
-# Job 10
+# Job 10 - fonction nombre pair ou impair
 def Job10():
 
+    def parity (nombre):
+        if isinstance(nombre, int)and nombre >= 0:
+            if nombre % 2 == 0:
+                print("Ce nombre est pair !!")
+            else :
+                print("ce nombre est impair.")   
+        else:
+            print("Saisie invalide, veuillez entrer un nombre entier positif") 
 
-    return
+    nombre = int(input("entrez un nombre entier positif: "))
+
+    #Appel de la fonction
+    # parity(4)   # Nombre pair
+    # parity(7)   # Nombre impair
+    # parity(10)  # Nombre pair
+    # parity(-3)  # Entrée invalide (négatif)
+    # parity(3.5) # Entrée invalide (non entier)
+
+    return parity(nombre)
 
 
 # Job 11
@@ -184,4 +201,4 @@ def Job11():
 
     return
 
-Job9()
+Job10()
