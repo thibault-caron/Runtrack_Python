@@ -109,7 +109,7 @@ def Job8():
     return print(f"La somme de toutes les valeurs paires du tableau est : {somme_valeurs_paires(L)}")
 
 
-# Job 9
+# Job 9 - Récupère valeurs min et max
 def Job9():
     L = [8, 24, 27, 48, 2,16, 9, 102, 7, 84, 91]
     max_value = max(L)
@@ -119,11 +119,16 @@ def Job9():
 
     return
 
-# Job 10
+# Job 10 - calcule le produit de toutes les valeurs de la liste comprises dans l’intervalle [25, 90]
 def Job10():
+    L = [8, 24, 27, 48, 2,16, 9, 102, 7, 84, 91]
+    product = 1; 
+    for x in L: 
+        if 25 <= x <= 90: product *= x
+    
+    print(f"le produit de toutes les valeurs de la liste comprises dans l'intervalle [25, 90] est: {product}")
 
-
-    return
+    return product
 
 # Job 11
 def Job11():
@@ -156,4 +161,4 @@ def Job15():
 
     return
 
-Job9()
+Job10()
