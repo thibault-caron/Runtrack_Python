@@ -142,7 +142,7 @@ def Job11():
     return L
 
 
-# Job 12 - trie une liste dans l’ordre croissant
+# Job 12 - trie une liste dans l’ordre croissant (L = sorted(L))
 def Job12():
     L = [7, 11, 42, 39, 2]
     print(f"liste initiale: {L}")
@@ -156,11 +156,15 @@ def Job12():
 
     return L
 
-# Job 13
+# Job 13 - supprime les doublons (L = list(set(L)))
 def Job13():
+    L = [10, 20,30, 20, 10, 50, 60, 40, 80, 50, 40]
+    print(f"liste initiale: {L}")
 
+    L = [x for i, x in enumerate(L) if x not in L[:i]]
+    print(f"liste finale: {L}")
 
-    return
+    return L
 
 # Job 14
 def Job14():
@@ -174,4 +178,4 @@ def Job15():
 
     return
 
-Job12()
+Job13()
