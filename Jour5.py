@@ -172,9 +172,9 @@ def Job14():
     def my_long_word(n, s):
         return [word for word in s.split() if len(word) > n]
 
-    my_long_word(5, "grandiose")
+    print (my_long_word(5, "test"))
 
-    return
+    return 
 
 # Job 15
 def Job15():
