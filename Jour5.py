@@ -130,11 +130,16 @@ def Job10():
 
     return product
 
-# Job 11
+# Job 11 - augmenter de 1 la valeur de chaque élément d'une liste
 def Job11():
+    L = [7, 11, 42, 39, 2]
+    print(f"liste initiale: {L}")
 
+    L = [x+1 for x in L]
 
-    return
+    print(f"liste finale: {L}")
+
+    return L
 
 
 # Job 12
@@ -161,4 +166,4 @@ def Job15():
 
     return
 
-Job10()
+Job11()
