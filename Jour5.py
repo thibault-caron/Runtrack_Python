@@ -142,11 +142,19 @@ def Job11():
     return L
 
 
-# Job 12
+# Job 12 - trie une liste dans l’ordre croissant
 def Job12():
+    L = [7, 11, 42, 39, 2]
+    print(f"liste initiale: {L}")
 
+    for i in range(len(L)):
+        for j in range(i+1, len(L)):
+            if L[i] > L[j]:
+                L[i], L[j] = L[j], L[i]
+    
+    print(f"liste finale: {L}")
 
-    return
+    return L
 
 # Job 13
 def Job13():
@@ -166,4 +174,4 @@ def Job15():
 
     return
 
-Job11()
+Job12()
