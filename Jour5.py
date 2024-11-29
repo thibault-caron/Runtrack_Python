@@ -80,18 +80,33 @@ def Job6():
     return resultat
 
 
-# Job 7
+# Job 7 - Compte les multiples de 3 dans la liste
 def Job7():
+    L =[8,24,48,2,16]
+
+    def multiples_trois(L):
+        i = 0
+        for num in L:
+            if num % 3 == 0:
+                i += 1
+        return i
+
+    return print(f"Nombre de multiple de trois dans la liste : {multiples_trois(L)}")
 
 
-    return
-
-
-# Job 8
+# Job 8 - Calcul la somme des valeurs paires de la liste
 def Job8():
+    L = [8, 24,27,48,2,16,9,7,84,91]
 
-
-    return
+    # Somme du tableau
+    def somme_valeurs_paires(L):
+        somme = 0
+        for num in L:
+            if num % 2 == 0:
+                somme += num
+        return somme
+    
+    return print(f"La somme de toutes les valeurs paires du tableau est : {somme_valeurs_paires(L)}")
 
 
 # Job 9
@@ -137,4 +152,4 @@ def Job15():
 
     return
 
-Job6()
+Job8()
