@@ -166,9 +166,13 @@ def Job13():
 
     return L
 
-# Job 14
+# Job 14 - fonction qui retourne les mots plus longs que le chiffre passé en paramètre
 def Job14():
 
+    def my_long_word(n, s):
+        return [word for word in s.split() if len(word) > n]
+
+    my_long_word(5, "grandiose")
 
     return
 
@@ -178,4 +182,4 @@ def Job15():
 
     return
 
-Job13()
+Job14()
